@@ -18,6 +18,9 @@ class SliderView: UIView {
         return collectionView.indexPathsForVisibleItems.first?.row
     }
     
+    var nextView: NextView!
+    var previousView: NextView!
+    
     private lazy var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -47,15 +50,21 @@ class SliderView: UIView {
     }
     
     private func commitInit() {
+        // Setup collection view
         self.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         collectionView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         collectionView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         collectionView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        // Setup next & previous views
+        nextView = NextView(direction: .right, addTo: self)
+        nextView.delegate = self
+        previousView = NextView(direction: .left, addTo: self)
+        previousView.delegate = self
     }
     
-    private func next() {
+    fileprivate func next() {
         guard let currentIndex = currentIndex else { return }
         if currentIndex < list.count - 1 {
             self.collectionView.scrollToItem(at: IndexPath(row: currentIndex + 1, section: 0),
@@ -63,7 +72,7 @@ class SliderView: UIView {
         }
     }
     
-    private func previous() {
+    fileprivate func previous() {
         guard let currentIndex = currentIndex else { return }
         if currentIndex > 0 {
             self.collectionView.scrollToItem(at: IndexPath(row: currentIndex - 1, section: 0),
@@ -89,3 +98,19 @@ extension SliderView: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
     }
 }
+
+extension SliderView: NextViewDelegate {
+    
+    func nextView(_ view: NextView, nextButtonTapped button: UIButton) {
+        switch view {
+        case nextView:
+            self.next()
+        case previousView:
+            self.previous()
+        default:
+            break
+        }
+    }
+    
+}
+

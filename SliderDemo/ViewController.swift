@@ -23,39 +23,3 @@ class ViewController: UIViewController {
 
 
 }
-
-/*
-class MyViewController: UIViewController {
-
-    var rightView: NextView!
-    var leftView: NextView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = .yellow
-                
-        rightView = NextView(direction: .right, addTo: view)
-        rightView.delegate = self
-        leftView = NextView(direction: .left, addTo: view)
-        leftView.delegate = self
-        // Do any additional setup after loading the view.
-    }
-    
-}
-
-extension MyViewController: NextViewDelegate {
-    
-    func nextView(_ view: NextView, nextButtonTapped button: UIButton) {
-        switch view {
-        case rightView:
-            break
-        case leftView:
-            break
-        default:
-            break
-        }
-    }
-    
-}
-*/

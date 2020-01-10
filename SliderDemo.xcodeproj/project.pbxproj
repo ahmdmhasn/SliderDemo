@@ -16,6 +16,7 @@
 		810C890223C9068700826276 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C890123C9068700826276 /* UIView+.swift */; };
 		810C890423C906D300826276 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C890323C906D300826276 /* SliderView.swift */; };
 		810C890623C90AED00826276 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C890523C90AED00826276 /* ImageCollectionViewCell.swift */; };
+		810C890823C913E800826276 /* SliderView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810C890723C913E800826276 /* SliderView.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		810C890123C9068700826276 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		810C890323C906D300826276 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		810C890523C90AED00826276 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		810C890723C913E800826276 /* SliderView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SliderView.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				810C890123C9068700826276 /* UIView+.swift */,
 				810C890323C906D300826276 /* SliderView.swift */,
 				810C890523C90AED00826276 /* ImageCollectionViewCell.swift */,
+				810C890723C913E800826276 /* SliderView.xcassets */,
 			);
 			path = SliderView;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				810C88F723C905AF00826276 /* LaunchScreen.storyboard in Resources */,
+				810C890823C913E800826276 /* SliderView.xcassets in Resources */,
 				810C88F423C905AF00826276 /* Assets.xcassets in Resources */,
 				810C88F223C905AB00826276 /* Main.storyboard in Resources */,
 			);

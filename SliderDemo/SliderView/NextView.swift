@@ -43,7 +43,7 @@ class NextView: UIView {
     
     private lazy var button: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "round_keyboard_arrow"), for: .normal)
+        button.setImage(UIImage(named: "round_arrow"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         button.imageView?.tintColor = .white
@@ -106,10 +106,6 @@ class NextView: UIView {
         if enableAutomaticFadeOut {
             resetTimer()
         }
-    }
-    
-    @objc private func nextTapped(_ sender: UIView) {
-        
     }
     
     // MARK: Timer Methods
