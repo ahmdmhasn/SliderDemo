@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		810C88EB23C905AB00826276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C88EA23C905AB00826276 /* AppDelegate.swift */; };
-		810C88ED23C905AB00826276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C88EC23C905AB00826276 /* SceneDelegate.swift */; };
 		810C88EF23C905AB00826276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C88EE23C905AB00826276 /* ViewController.swift */; };
 		810C88F223C905AB00826276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810C88F023C905AB00826276 /* Main.storyboard */; };
 		810C88F423C905AF00826276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810C88F323C905AF00826276 /* Assets.xcassets */; };
 		810C88F723C905AF00826276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810C88F523C905AF00826276 /* LaunchScreen.storyboard */; };
+		810C890023C9063D00826276 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C88FF23C9063D00826276 /* NextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		810C88E723C905AB00826276 /* SliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		810C88EA23C905AB00826276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		810C88EC23C905AB00826276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		810C88EE23C905AB00826276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		810C88F123C905AB00826276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		810C88F323C905AF00826276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		810C88F623C905AF00826276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		810C88F823C905AF00826276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810C88FF23C9063D00826276 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		810C88E923C905AB00826276 /* SliderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				810C88FE23C9061800826276 /* SliderView */,
 				810C88EA23C905AB00826276 /* AppDelegate.swift */,
-				810C88EC23C905AB00826276 /* SceneDelegate.swift */,
 				810C88EE23C905AB00826276 /* ViewController.swift */,
 				810C88F023C905AB00826276 /* Main.storyboard */,
 				810C88F323C905AF00826276 /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				810C88F823C905AF00826276 /* Info.plist */,
 			);
 			path = SliderDemo;
+			sourceTree = "<group>";
+		};
+		810C88FE23C9061800826276 /* SliderView */ = {
+			isa = PBXGroup;
+			children = (
+				810C88FF23C9063D00826276 /* NextView.swift */,
+			);
+			path = SliderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +148,7 @@
 			files = (
 				810C88EF23C905AB00826276 /* ViewController.swift in Sources */,
 				810C88EB23C905AB00826276 /* AppDelegate.swift in Sources */,
-				810C88ED23C905AB00826276 /* SceneDelegate.swift in Sources */,
+				810C890023C9063D00826276 /* NextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				INFOPLIST_FILE = SliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				INFOPLIST_FILE = SliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
