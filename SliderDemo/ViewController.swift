@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sliderView: SliderView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let images = ["01", "02", "03", "04"]
+        let imagesList = images.map{UIImage(named: $0)!}
+        
+        sliderView.list = imagesList
     }
 
 
